@@ -1,0 +1,226 @@
+:root{
+  --lightgreen : #00c78a;
+  --orange: #ff9c27;
+  --bg:#0a035b;
+  --primarytext: #e9b022;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #91f3f3;
+}
+header{
+  padding: 2rem 1rem;
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+}
+header h1{
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: var(--primarytext);
+  margin-bottom: 1.5rem;
+}
+#task-form{
+  display: flex;
+}
+
+input,button{
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+#task-input{
+  flex: 1 1 0%;
+  background-color: var(--bg);
+  padding: 1rem;
+  border: 1px solid var(--primarytext);
+  border-radius: 1rem;
+  margin-right: 1rem;
+  color: var(--primarytext);
+  font-size: 1.25rem;
+}
+#task-input::placeholder{
+  color: var(--primarytext);
+}
+#task-submit{
+  color: var(--primarytext);
+  font-size: 1.25rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.4s;
+  border: 1px solid var(--primarytext);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+#task-submit:hover{
+  opacity: 0.8;
+  color: #91f3f3;
+}
+
+#task-submit:active{
+  opacity: 0.6;
+}
+.maindiv{
+  background: var(--bg);
+  flex: 0% 1 0%;
+  max-width: 750px;
+  width: 100%;
+  margin: 2rem auto;
+  border-radius: 1rem;
+}
+main{
+  flex: 1 1 0%;
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#complete_all_task{
+  color: aliceblue;
+  font-size: 1rem;
+  font-weight: 100;
+  cursor: pointer;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: italic;
+}
+
+#complete_task span {
+  font-size: 20px;
+  color: #2857a4;
+  display: inline-block;
+  padding-top: 10px;
+  margin-right: 0.1rem;
+}
+
+#complete_task :hover{
+  color: greenyellow;
+}
+
+
+.task-list{
+  padding: 1rem;
+}
+
+#tasks .task{
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--bg);
+  border: 1px solid var(--orange);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+#tasks .task .content{
+  flex: 1 1 0%;
+}
+#tasks .task .content .text{
+  color: var(--primarytext);
+  font-size: 1.13rem;
+  width: 100%;
+  display: block;
+  transition: 0.4s;
+}
+#tasks .task .content .text:not(:read-only){
+  color: var(--lightgreen);
+}
+#tasks .task .actions{
+  display: flex;
+  margin: 0 -0.5rem;
+}
+
+.task .actions button{
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 800;
+  margin: 0 0.5rem;
+  text-transform: uppercase;
+  transition: 0.4s;
+}
+
+.task button{
+  color:aliceblue;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0.5rem;
+  text-transform: uppercase;
+  transition: 0.4s;
+}
+
+.task  button:hover{
+  opacity: 0.8;
+  color: #e3f4f4;
+  text-shadow: yellowgreen;
+}
+
+.task .Completed{
+  color: var(--orange)
+}
+
+.task .actions button:hover{
+  opacity: 0.8;
+  color: #91f3f3;
+  text-shadow: yellowgreen;
+}
+
+.task .actions button:active{
+  opacity: 0.6;
+}
+.task .actions .Edit{
+  color: var(--lightgreen);
+}
+.task .actions .Delete{
+  color: crimson;
+}
+
+
+.strike {
+  text-decoration: line-through;
+}
+
+#bottom_div{
+  margin-bottom: 10px;
+  color: aliceblue;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: italic;
+  margin-left: 30px;
+}
+
+#bottom_div span{
+  color: aliceblue;
+  font-size: 1rem;
+  font-weight: 100;
+
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: italic;
+  margin-right: 200px;
+  
+}
+
+#bottom_div input{
+  margin-left: 5px;
+  color: aliceblue;
+  font-size: 1rem;
+  font-weight: 100;
+  cursor: pointer;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: italic;
+}
+
+#bottom_div :hover{
+color: #e9b022;
+text-shadow: #e9b022;
+
+}
