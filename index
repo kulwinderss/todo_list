@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" 
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" 
+    crossorigin="anonymous">
+   
+    <title>TodoList</title>
+</head>
+<body>
+  <!--div for entering task-->
+    <div class="maindiv">
+
+        <header>
+            <h1>Enter your TODO List items</h1>
+            <form action="" id="task-form">
+                <input type="text" id="task-input" placeholder="Type your todo list">
+                <input type="submit" id="task-submit" value="Add">
+            </form>
+        </header>
+
+
+        <main>
+     <!--complete all tasks button-->
+          <div id="complete_task">           
+              <span>
+                <i class="fas fa-solid fa-check-double fa-fade fa-2xs"></i>
+              </span>
+              <input type="button" id="complete_all_task" value="Complete All Tasks">            
+          </div>
+          
+  <!--section for entered tasks-->
+            <section class="task-list">
+                
+               <div id="tasks">
+                    
+                </div>
+    
+            </section>
+        </main>
+
+          <!--bottom div-->
+          <div id="bottom_div">
+          Total Number of Tasks :
+            <span id="no_of_tasks">
+               0
+            </span>
+           
+              <input type="button" id="show_all_task" value="All"> 
+              <input type="button" id="show_uncomplete_task" value="Uncomplete">
+              <input type="button" id="show_completed_task" value="Completed">
+          </div>
+
+    </div>
+  
+    <script src="todo.js"></script>
+</body>
+</html>
